@@ -5,6 +5,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Version](https://img.shields.io/badge/Version-v2.0-blue)
 ![Benchmark](https://img.shields.io/badge/Benchmark-Accuracy%2095.9%25-brightgreen)
+![Performance](https://img.shields.io/badge/Latency-0.1ms-orange)
 
 > **v2.0** | AI Security Engine | OWASP LLM Top 10 | Two-Layer Detection | MIT License
 
