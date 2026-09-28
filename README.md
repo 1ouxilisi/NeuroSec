@@ -4,7 +4,7 @@
 ![CI](https://github.com/1ouxilisi/NeuroSec/actions/workflows/ci.yml/badge.svg)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Version](https://img.shields.io/badge/Version-v2.0-blue)
-![Benchmark](https://img.shields.io/badge/Benchmark-Accuracy%2095.8%2Dbrightgreen)
+![Benchmark](https://img.shields.io/badge/Benchmark-Accuracy%2095.9%25-brightgreen)
 
 > **v2.0** | AI Security Engine | OWASP LLM Top 10 | Two-Layer Detection | MIT License
 
@@ -64,7 +64,7 @@ NeuroSec/
 | F1 Score | 96.3% |
 | 误报率 | 0% |
 
-*测试集：24样本（14攻击 + 10正常）*
+*测试集：49样本（29攻击 + 20正常）*
 
 ### 1. Prompt Injection Detector
 
