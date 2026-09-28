@@ -18,7 +18,7 @@ import uvicorn
 
 from pentestai.modules.ai_security.orchestrator import SecurityOrchestrator
 
-app = FastAPI(title="NeuroSec AI Security", version="48.4")
+app = FastAPI(title="NeuroSec AI Security", version="2.0.0")
 orch = SecurityOrchestrator()
 
 class ScanRequest(BaseModel):
