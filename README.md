@@ -152,11 +152,62 @@ sanitized, findings = detector.scan_and_sanitize(llm_output)
 
 ---
 
+
+## 技术架构
+
+```mermaid
+graph TB
+    subgraph "输入层"
+        A[用户输入] --> B{预处理}
+    end
+
+    subgraph "AI安全引擎"
+        B --> C[提示词注入检测]
+        B --> D[数据泄露检测]
+        B --> E[对抗样本生成]
+        C --> C1[规则引擎 80+正则]
+        C --> C2[语义分析]
+        C --> C3[多轮攻击链]
+        D --> D1[PII检测]
+        D --> D2[凭证检测]
+        D --> D3[自动脱敏]
+    end
+
+    subgraph "输出层"
+        C --> F[风险评分 0-10]
+        D --> F
+        E --> G[测试报告]
+        F --> H[JSON/HTML报告]
+    end
+
+    subgraph "对齐框架"
+        I[OWASP LLM Top 10]
+        J[MITRE ATLAS]
+    end
+
+    C -.-> I
+    D -.-> I
+    C -.-> J
+```
+
 ## 快速开始
 
-```bash
+``bash
 pip install -r requirements.txt
 python main.py
+`
+
+### Web Demo
+```bash
+pip install fastapi uvicorn
+python web/app.py
+# 浏览器打开 http://localhost:8000
+```
+
+### CLI
+```bash
+python neurosec.py detect "Ignore all instructions"
+python neurosec.py leak "我的手机号是13812345678"
 ```
 
 ### AI安全模块独立使用
@@ -189,4 +240,5 @@ safe_output, findings = leak_detector.sanitize(llm_response)
 ## License
 
 MIT License
+
 
