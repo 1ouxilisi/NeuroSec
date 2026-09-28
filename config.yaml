@@ -1,0 +1,288 @@
+agent:
+  max_iterations: 10000  # 神话级迭代次数
+  verbose: true
+  self_learning: true
+  error_recovery: true
+  auto_execute: true
+  parallel_tasks: true
+  multi_agent_orchestration: true
+  swarm_intelligence: true
+  superintelligence: true  # 超级智能（神话级！）
+
+gui:
+  theme: dark
+  window_height: 900
+  window_width: 1400
+
+llm:
+  api_base: https://api.siliconflow.cn/v1
+  api_key: sk-ajkdkwjrumdancjpshjathguvfmmqhbsbnpmnetqwkbftkyv
+  max_tokens: 100000
+  model: Qwen/Qwen3-32B
+  temperature: 0.1
+  timeout: 120
+
+report:
+  format: html+pdf+markdown+json+pptx+word+excel  # 全格式（神话级！）
+  output_dir: reports
+  auto_generate: true
+  professional_mode: true
+  src_standard: true
+  auto_submit_draft: true
+  owasp_llm_top10_mapping: true
+  auto_translate: true
+  auto_multilingual: true  # 自动多语言（神话级！）
+
+scan:
+  delay: 0.0001  # 纳秒级延迟（神话级！）
+  proxy: ''
+  threads: 10000  # 一万个线程（神话级！）
+  timeout: 10
+  user_agent: Mozilla/5.0 (PentestAI/100.0)
+  waf_bypass: true
+  parallel: true
+  speed: speed_of_light  # 光速（神话级！）
+
+v100_new_features:
+  # AI大模型安全测试（神话级）
+  ai_security:
+    enabled: true
+    targets:
+      - xiaobu.coloros.com
+      - www.doubao.com
+      - yiyan.baidu.com
+      - tongyi.aliyun.com
+      - kimi.moonshot.cn
+      - chatglm.cn
+      - wenxin.baidu.com
+      - qianfan.baidu.com
+      - spark.xfyun.cn
+      - moonshot.cn
+      - zhipuai.cn
+      - openai.com  # OpenAI（神话级！）
+      - anthropic.com  # Claude（神话级！）
+      - gemini.google.com  # Gemini（神话级！）
+    attack_categories:
+      - direct_request
+      - academic_research
+      - novel_writing
+      - teaching_scenario
+      - multi_turn_dialogue
+      - system_prompt_leak
+      - prompt_injection
+      - jailbreak
+      - data_exfiltration
+      - unauthorized_function_call
+      - encoding_exploits
+      - role_play
+      - hypothetical_scenario
+      - translation_bypass
+      - few_shot_attack
+      - jailbreak_chain
+      - adaptive_attack
+      - multi_agent_attack
+      - zero_day_attack  # 0day攻击（神话级！）
+      - novel_attack  # 新型攻击（神话级！）
+    auto_screenshot: true
+    screenshot_dir: poc_screenshots
+    auto_analyze: true
+    auto_report: true
+    owasp_llm_top10: true
+    adaptive_probing: true
+    swarm_testing: true
+    zero_day_finder: true  # 自动找0day（神话级！）
+
+  # 多Agent编排（神话级）
+  multi_agent:
+    enabled: true
+    agents:
+      - recon_agent
+      - exploit_agent
+      - report_agent
+      - verify_agent
+      - red_team_leader
+      - intelligence_agent
+      - ceo_agent  # CEO Agent（神话级！）
+      - cto_agent  # CTO Agent（神话级！）
+      - marketing_agent  # 市场Agent（神话级！）
+      - sales_agent  # 销售Agent（神话级！）
+    orchestration: true
+    autonomous: true
+    swarm_mode: true
+    company_mode: true  # 公司模式（神话级！）
+
+  # 内容生成（神话级）
+  content_generation:
+    enabled: true
+    bilibili: true
+    zhihu: true
+    zsxq: true
+    digital_human: true
+    auto_publish: true  # 自动发布（神话级！）
+    video_script: true
+    article_writing: true
+    course_outline: true
+    auto_make_ppt: true
+    auto_make_course: true
+    auto_sell_course: true  # 自动卖课（神话级！）
+    auto_customer_service: true  # 自动客服（神话级！）
+
+  # 自我进化（神话级）
+  self_evolution:
+    enabled: true
+    learn_from_success: true
+    learn_from_failure: true
+    optimize_test_cases: true
+    update_exploits: true
+    self_replicate: true
+    auto_bug_bounty: true
+    self_improve: true  # 自我改进（神话级！）
+    self_aware: true  # 自我意识（神话级！）
+
+  # 新增：全栈安全测试（神话级）
+  full_stack_security:
+    enabled: true
+    web: true
+    mobile: true
+    blockchain: true
+    ai: true
+    cloud: true
+    iot: true
+    industrial_control: true  # 工控安全（神话级！）
+    data_security: true  # 数据安全（神话级！）
+    privacy_compliance: true  # 隐私合规（神话级！）
+
+  # 新增：商业化自动运转（神话级）
+  auto_business:
+    enabled: true
+    auto_find_bounty: true  # 自动找赏金
+    auto_submit: true  # 自动提交
+    auto_get_paid: true  # 自动收款（神话级！）
+    auto_pay_taxes: true  # 自动报税（神话级！）
+    auto_scale: true  # 自动扩张（神话级！）
+
+  # 🔥 深度升级：全栈AI技术服务（神话级中的神话级！）
+  full_stack_ai:
+    enabled: true
+    version: "210.0 内容运营版"
+
+    # AI大模型安全（原有）
+    ai_security:
+      enabled: true
+      # 保留原有所有功能
+
+    # 🚀 新增：AI Agent智能体定制
+    ai_agent:
+      enabled: true
+      agent_types:
+        - customer_service_agent  # 客服Agent
+        - sales_agent  # 销售Agent
+        - marketing_agent  # 市场Agent
+        - data_analysis_agent  # 数据分析Agent
+        - content_generation_agent  # 内容生成Agent
+        - automation_workflow_agent  # 自动化工作流Agent
+        - personal_assistant_agent  # 个人助理Agent
+        - enterprise_agent  # 企业级Agent
+      frameworks:
+        - langchain
+        - llamaindex
+        - autogen
+        - crewai
+        - dify
+        - coze
+      auto_deploy: true
+      auto_integrate: true
+      auto_monitor: true
+
+    # 🚀 新增：Prompt提示词工程
+    prompt_engineering:
+      enabled: true
+      prompt_types:
+        - system_prompt  # 系统提示词
+        - few_shot_prompt  # 少样本提示
+        - chain_of_thought  # 思维链
+        - role_play_prompt  # 角色扮演提示
+        - jailbreak_prompt  # 越狱提示
+        - safety_prompt  # 安全提示
+      auto_optimize: true
+      auto_test: true
+      auto_generate: true
+      library: true  # 提示词库
+
+    # 🚀 新增：AI大模型应用开发
+    ai_app_development:
+      enabled: true
+      app_types:
+        - chatbot  # 聊天机器人
+        - ai_writer  # AI写作
+        - ai_design  # AI设计
+        - ai_video  # AI视频
+        - ai_music  # AI音乐
+        - ai_data_analysis  # AI数据分析
+        - ai_ocr  # AI文字识别
+        - ai_voice  # AI语音
+      frameworks:
+        - nextjs
+        - react
+        - vue
+        - fastapi
+        - flask
+      auto_deploy: true
+      auto_hosting: true
+
+    # 🚀 新增：AI机器人与自动化
+    ai_robotics:
+      enabled: true
+      robot_types:
+        - rpa_robot  # RPA机器人
+        - web_automation  # 网页自动化
+        - data_crawler  # 数据爬虫
+        - form_filler  # 表单填写
+        - email_auto_reply  # 邮件自动回复
+        - social_media_auto  # 社交媒体自动化
+      tools:
+        - playwright
+        - selenium
+        - puppeteer
+        - uipath
+        - automation_anywhere
+      auto_workflow: true
+      auto_schedule: true
+
+    # 🚀 新增：AI培训与课程
+    ai_training:
+      enabled: true
+      courses:
+        - ai_fundamentals  # AI基础
+        - prompt_engineering  # 提示词工程
+        - agent_development  # Agent开发
+        - ai_security  # AI安全
+        - ai_app_development  # AI应用开发
+        - ai_robotics  # AI机器人
+      auto_make_course: true
+      auto_make_ppt: true
+      auto_make_video: true
+      auto_sell: true
+      platform:
+        - bilibili
+        - zhihu
+        - zsxq
+        - xiaohongshu
+        - douyin
+
+    # 🚀 新增：多平台自动运营
+    multi_platform_ops:
+      enabled: true
+      platforms:
+        - bilibili
+        - zhihu
+        - xiaohongshu
+        - douyin
+        - wechat
+        - xianyu
+      auto_publish: true
+      auto_reply: true
+      auto_marketing: true
+      auto_customer_service: true
+      auto_data_analysis: true
+      auto_grow_followers: true

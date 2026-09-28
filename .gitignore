@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+
+# 编译产物
+build/
+build_optimized/
+build_v42/
+dist/
+dist_optimized/
+*.spec
+
+# 测试结果和日志
+*.log
+*.txt
+*.json
+reports/
+task_states/
+workspace/
+
+# 文档和内容
+articles/
+引流文章/
+知识星球内容/
+课程/
+课程视频/
+销售素材包/
+videos/
+
+# 截图和图片
+poc_screenshots/
+*.png
+*.jpg
+
+# 测试文件
+test_apk/
+test_contracts/
+ens-contracts/
+stackingdao-contracts/
+mobile_test/
+tools/
+tests/
+
+# 系统文件
+.DS_Store
+Thumbs.db
