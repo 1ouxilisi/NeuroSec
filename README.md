@@ -1,6 +1,11 @@
-# NeuroSec — AI-Driven Security Testing Platform
+﻿# NeuroSec — AI-Driven Security Testing Platform
 
-> **v48.0** | 1,000+ Modules | 250K+ Lines of Code | MIT License
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)
+![CI](https://github.com/1ouxilisi/NeuroSec/actions/workflows/ci.yml/badge.svg)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Version](https://img.shields.io/badge/Version-v48.2-orange)
+
+> **v48.2** | AI Security Engine | OWASP LLM Top 10 | MITRE ATLAS | MIT License
 
 NeuroSec（神经安全）是一个AI驱动的全功能安全测试平台，核心能力覆盖**传统网络安全测试**与**AI大模型安全**两大领域。平台基于MITRE ATLAS框架设计，集成OWASP LLM Top 10检测能力，支持从信息收集、漏洞扫描到AI红队测试的完整安全评估流程。
 
@@ -184,3 +189,4 @@ safe_output, findings = leak_detector.sanitize(llm_response)
 ## License
 
 MIT License
+
