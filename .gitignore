@@ -3,8 +3,10 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.pyd
 .env
 venv/
+.venv/
 
 # 编译产物
 build/
@@ -16,7 +18,6 @@ dist_optimized/
 
 # 测试结果和日志
 *.log
-*.txt
 *.json
 reports/
 task_states/
@@ -35,6 +36,10 @@ videos/
 poc_screenshots/
 *.png
 *.jpg
+*.jpeg
+*.gif
+*.bmp
+*.ico
 
 # 测试文件
 test_apk/
@@ -45,6 +50,32 @@ mobile_test/
 tools/
 tests/
 
+# 资源文件
+resources/
+
+# 数据库（运行时生成）
+*.db
+*.sqlite
+*.sqlite3
+
 # 系统文件
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 临时文件
+*.tmp
+*.bak
+*.old
+~$*
+
+# 凭证和配置
+config.local.yaml
+secrets.yaml
+.env.*
