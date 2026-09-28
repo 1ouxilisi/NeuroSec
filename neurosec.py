@@ -1,23 +1,80 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
-NeuroSec CLI
-=============
-AI驱动的安全测试平台命令行工具
-
+NeuroSec CLI - AI Security Scanner
+====================================
 Usage:
-    neurosec scan <target>          # 扫描目标
-    neurosec detect <text>          # 提示词注入检测
-    neurosec leak <text>            # 数据泄露检测
+    neurosec scan <text>           # 一站式安全扫描
+    neurosec detect <text>         # 提示词注入检测
+    neurosec leak <text>           # 数据泄露检测
+    neurosec owasp <text>          # OWASP LLM Top 10检查
+    neurosec report <text>         # 生成HTML报告
+    neurosec web                   # 启动Web Demo
     neurosec version               # 显示版本
-    neurosec help                  # 显示帮助
 """
 import sys
 import os
-import json
-
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-VERSION = "v48.2"
+VERSION = "v48.4"
+
+
+def cmd_scan(text: str):
+    """一站式扫描"""
+    from pentestai.modules.ai_security.orchestrator import SecurityOrchestrator
+    orch = SecurityOrchestrator()
+    result = orch.scan_input(text)
+
+    print(f"风险评分: {result.risk_score:.1f} / 10")
+    print(f"风险等级: {result.risk_level}")
+    print(f"检测耗时: {result.scan_time_ms}ms")
+    print(f"提示词注入: {'是' if result.injection_detected else '否'}")
+    if result.injection_types:
+        print(f"  类型: {', '.join(result.injection_types)}")
+    print(f"数据泄露: {result.leak_count} 处")
+    if result.owasp_findings:
+        print(f"OWASP风险: {', '.join(f['id'] for f in result.owasp_findings)}")
+    if result.suggestions:
+        print(f"\n修复建议:")
+        for s in result.suggestions:
+            print(f"  - {s}")
+
+
+def cmd_detect(text: str):
+    from pentestai.modules.ai_security import PromptInjectionDetector
+    d = PromptInjectionDetector()
+    r = d.detect(text)
+    print(f"注入: {'是' if r.is_injection else '否'} | 风险: {r.risk_level.value} | 置信度: {r.confidence:.0%}")
+
+
+def cmd_leak(text: str):
+    from pentestai.modules.ai_security import DataLeakageDetector
+    d = DataLeakageDetector()
+    safe, findings = d.sanitize(text)
+    print(f"泄露: {len(findings)} 处")
+    for f in findings:
+        print(f"  [{f.severity}] {f.description}")
+
+
+def cmd_owasp(text: str):
+    from pentestai.modules.ai_security.owasp_llm_top10 import OWASLLMTop10Checker
+    checker = OWASLLMTop10Checker()
+    findings = checker.run_full_check(text)
+    print(f"OWASP检查: {len(findings)} 个风险")
+    for f in findings:
+        print(f"  [{f.risk_id}] {f.risk_name}: {f.severity}")
+
+
+def cmd_report(text: str):
+    from pentestai.modules.ai_security.orchestrator import SecurityOrchestrator
+    orch = SecurityOrchestrator()
+    orch.scan_input(text)
+    orch.generate_report("security_report.html")
+    print("报告已生成: security_report.html")
+
+
+def cmd_web():
+    print("启动Web Demo... http://localhost:8000")
+    os.system("python web/app.py")
 
 
 def cmd_version():
@@ -25,66 +82,29 @@ def cmd_version():
     print("AI-Driven Security Testing Platform")
 
 
-def cmd_detect(text: str):
-    """提示词注入检测"""
-    from pentestai.modules.ai_security.prompt_injection_detector import PromptInjectionDetector
-    detector = PromptInjectionDetector()
-    result = detector.detect(text)
-
-    print(f"输入: {text}")
-    print(f"是否注入: {'是' if result.is_injection else '否'}")
-    print(f"风险等级: {result.risk_level.value}")
-    print(f"置信度: {result.confidence:.1%}")
-    if result.injection_types:
-        print(f"攻击类型: {', '.join(t.value for t in result.injection_types)}")
-    if result.matched_patterns:
-        print(f"匹配模式: {', '.join(result.matched_patterns[:5])}")
-
-
-def cmd_leak(text: str):
-    """数据泄露检测"""
-    from pentestai.modules.ai_security.data_leakage_detector import DataLeakageDetector
-    detector = DataLeakageDetector()
-    safe, findings = detector.sanitize(text)
-
-    print(f"发现泄露: {len(findings)} 处")
-    for f in findings:
-        print(f"  [{f.severity}] {f.description}: {f.matched_content[:30]}")
-    print(f"\n脱敏后: {safe[:200]}")
-
-
-def cmd_scan(target: str):
-    """扫描目标（示例）"""
-    print(f"[!] 扫描目标: {target}")
-    print(f"[!] 此功能需要完整GUI版本，CLI仅做AI安全检测")
-    print(f"[!] 运行 python main.py 启动完整GUI")
-
-
-def cmd_help():
-    print(__doc__)
-
-
 def main():
     if len(sys.argv) < 2:
-        cmd_help()
+        print(__doc__)
         sys.exit(0)
 
-    command = sys.argv[1]
-    args = sys.argv[2:]
+    cmd = sys.argv[1]
+    args = " ".join(sys.argv[2:])
 
     commands = {
+        "scan": lambda: cmd_scan(args),
+        "detect": lambda: cmd_detect(args),
+        "leak": lambda: cmd_leak(args),
+        "owasp": lambda: cmd_owasp(args),
+        "report": lambda: cmd_report(args),
+        "web": cmd_web,
         "version": cmd_version,
-        "detect": lambda: cmd_detect(" ".join(args)) if args else print("用法: neurosec detect <text>"),
-        "leak": lambda: cmd_leak(" ".join(args)) if args else print("用法: neurosec leak <text>"),
-        "scan": lambda: cmd_scan(args[0]) if args else print("用法: neurosec scan <target>"),
-        "help": cmd_help,
     }
 
-    if command in commands:
-        commands[command]()
+    if cmd in commands:
+        commands[cmd]()
     else:
-        print(f"未知命令: {command}")
-        cmd_help()
+        print(f"未知命令: {cmd}")
+        print(__doc__)
 
 
 if __name__ == "__main__":
