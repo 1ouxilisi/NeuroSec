@@ -1,0 +1,716 @@
+﻿
+🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  PentestAI 真实功能测试
+  测试靶场: http://testphp.vulnweb.com
+  测试时间: 2026-09-20 20:03:30
+🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+======================================================================
+  测试1: Nmap端口扫描
+======================================================================
+目标: testphp.vulnweb.com
+时间: 2026-09-20 20:03:30
+
+python : 2026-09-20 20:03:32.428 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: port_scanner
+所在位置 行:1 字符: 49
++ ... PentestAI"; python functional_test.py > functional_result.txt 2>&1; W ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-09-20 20:0...具: port_scanner:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-09-20 20:03:32.430 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dir_bruter
+2026-09-20 20:03:32.432 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: subdomain_enum
+2026-09-20 20:03:32.433 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: tech_detector
+2026-09-20 20:03:32.434 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: whois_dns
+2026-09-20 20:03:32.436 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: web_spider
+2026-09-20 20:03:32.437 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: batch_scanner
+2026-09-20 20:03:32.438 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_detector
+2026-09-20 20:03:32.459 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: web_scanner
+2026-09-20 20:03:32.461 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cve_checker
+2026-09-20 20:03:32.462 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: weak_password
+2026-09-20 20:03:32.485 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: poc_framework
+2026-09-20 20:03:32.486 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: payload_generator
+2026-09-20 20:03:32.488 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_helper
+2026-09-20 20:03:32.498 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: encoder
+2026-09-20 20:03:32.500 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: hash_identifier
+2026-09-20 20:03:32.520 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_generator
+2026-09-20 20:03:32.521 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_exporter
+2026-09-20 20:03:32.524 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_template
+2026-09-20 20:03:33.118 | INFO     | pentestai.core.engine_manager:_load_config:173 - 加载引擎配置: 10个
+2026-09-20 20:03:33.120 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Nmap -> C:\Program 
+Files (x86)\Nmap\nmap.exe
+2026-09-20 20:03:33.120 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Nuclei -> C:\Users\
+ASUS\tools\nuclei.exe
+2026-09-20 20:03:33.121 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: SQLMap -> C:\Users\
+ASUS\tools\sqlmap.bat
+2026-09-20 20:03:33.122 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Nikto -> C:\Users\A
+SUS\tools\nikto.bat
+2026-09-20 20:03:33.161 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Subfinder -> C:\Use
+rs\ASUS\bin\subfinder.EXE
+2026-09-20 20:03:33.206 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: JADX -> C:\Users\AS
+US\tools\jadx\bin\jadx.bat
+2026-09-20 20:03:33.207 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Apktool -> C:\Users
+\ASUS\tools\apktool.bat
+2026-09-20 20:03:33.252 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Python -> C:\Users\
+ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\python.EXE
+2026-09-20 20:03:33.253 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Docker -> C:\Progra
+m Files\Docker\Docker\resources\bin\docker.exe
+2026-09-20 20:03:33.253 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: curl -> C:\Windows\
+System32\curl.exe
+2026-09-20 20:03:36.992 | INFO     | pentestai.modules.utility.scan_history:_init_db:89 - 扫描历史数据库初始化完成: E:\BaiduNetdisk
+Download\yuanbao\PentestAI\pentestai\data\scan_history.db
+2026-09-20 20:03:36.993 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: scan_history
+2026-09-20 20:03:37.258 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dictionary_manager
+2026-09-20 20:03:37.262 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: proxy_pool
+2026-09-20 20:03:37.265 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_server
+2026-09-20 20:03:37.308 | INFO     | pentestai.modules.utility.vuln_kb:_init_db:279 - 漏洞知识库初始化完成: 15个内置漏洞
+2026-09-20 20:03:37.308 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_kb
+2026-09-20 20:03:37.310 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: phishing_detector
+2026-09-20 20:03:37.312 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: incident_response
+2026-09-20 20:03:37.315 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cloud_security
+2026-09-20 20:03:37.317 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: container_security
+2026-09-20 20:03:37.319 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: iot_security
+2026-09-20 20:03:37.322 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: password_security
+2026-09-20 20:03:37.325 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_security
+2026-09-20 20:03:37.327 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_api_security
+2026-09-20 20:03:37.330 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: code_audit
+2026-09-20 20:03:37.332 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: social_engineering_defense
+2026-09-20 20:03:37.335 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: wifi_security
+2026-09-20 20:03:37.337 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: bluetooth_security
+2026-09-20 20:03:37.340 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nfc_security
+2026-09-20 20:03:37.343 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: physical_security
+2026-09-20 20:03:37.345 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: database_security
+2026-09-20 20:03:37.348 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: middleware_security
+2026-09-20 20:03:37.350 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cdn_security
+2026-09-20 20:03:37.352 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dns_security
+2026-09-20 20:03:37.355 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_assistant
+2026-09-20 20:03:37.357 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_generator_pro
+2026-09-20 20:03:37.360 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_security_analyzer
+2026-09-20 20:03:37.362 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: batch_scan_manager
+2026-09-20 20:03:37.365 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_kb_pro
+2026-09-20 20:03:37.367 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dictionary_manager_pro
+2026-09-20 20:03:37.370 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: proxy_pool_pro
+2026-09-20 20:03:37.372 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_server_pro
+2026-09-20 20:03:37.374 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: gui_enhancer
+2026-09-20 20:03:37.376 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: plugin_system
+2026-09-20 20:03:37.378 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: i18n_manager
+2026-09-20 20:03:37.381 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: data_visualizer
+2026-09-20 20:03:37.383 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: workflow_engine
+2026-09-20 20:03:37.385 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: task_manager
+2026-09-20 20:03:37.388 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_knowledge_base
+2026-09-20 20:03:37.390 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: performance_manager
+2026-09-20 20:03:37.392 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_framework_enhanced
+2026-09-20 20:03:37.395 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: post_exploitation_assistant
+2026-09-20 20:03:37.397 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_simulator
+2026-09-20 20:03:37.400 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blue_team_defense_checker
+2026-09-20 20:03:37.402 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_intel_monitor
+2026-09-20 20:03:37.405 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_hunting_helper
+2026-09-20 20:03:37.407 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_audit
+2026-09-20 20:03:37.408 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_automation
+2026-09-20 20:03:37.411 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_environment_manager
+2026-09-20 20:03:37.413 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_surface_manager
+2026-09-20 20:03:37.415 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_training_helper
+2026-09-20 20:03:37.418 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: multi_engine_scan_scheduler
+2026-09-20 20:03:37.420 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verification_automation
+2026-09-20 20:03:37.422 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: asset_vuln_correlation
+2026-09-20 20:03:37.424 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: soc_assistant
+2026-09-20 20:03:37.426 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lightweight_agent
+2026-09-20 20:03:37.428 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_chain_builder
+2026-09-20 20:03:37.430 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verifier_pro
+2026-09-20 20:03:37.433 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: deep_report_engine
+2026-09-20 20:03:37.435 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_workflow_engine
+2026-09-20 20:03:37.437 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_path_analyzer
+2026-09-20 20:03:37.439 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: fix_advisor_engine
+2026-09-20 20:03:37.441 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: result_aggregator
+2026-09-20 20:03:37.443 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_prioritizer
+2026-09-20 20:03:37.445 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_lab_manager
+2026-09-20 20:03:37.448 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pentest_workflow_engine
+2026-09-20 20:03:37.450 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: data_visualization_engine
+2026-09-20 20:03:37.453 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_audit_pro
+2026-09-20 20:03:37.455 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_intel_aggregator
+2026-09-20 20:03:37.457 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: soar_orchestrator
+2026-09-20 20:03:37.459 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: distributed_scan_nodes
+2026-09-20 20:03:37.461 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_report_generator
+2026-09-20 20:03:37.463 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_success_predictor
+2026-09-20 20:03:37.465 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_automation
+2026-09-20 20:03:37.467 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_review
+2026-09-20 20:03:37.469 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: automated_pentest_pipeline
+2026-09-20 20:03:37.471 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_intel_auto_correlator
+2026-09-20 20:03:37.473 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_pentest_advisor
+2026-09-20 20:03:37.476 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_metrics_dashboard
+2026-09-20 20:03:37.478 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_gateway_security
+2026-09-20 20:03:37.480 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: supply_chain_audit
+2026-09-20 20:03:37.482 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_app_security_enhanced
+2026-09-20 20:03:37.484 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: automated_threat_hunting
+2026-09-20 20:03:37.486 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: k8s_security_auditor
+2026-09-20 20:03:37.488 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: zero_trust_assessor
+2026-09-20 20:03:37.490 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_report_polisher
+2026-09-20 20:03:37.493 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_awareness_training
+2026-09-20 20:03:37.495 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: email_security_tester
+2026-09-20 20:03:37.497 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_assessment
+2026-09-20 20:03:37.499 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: database_audit_enhanced
+2026-09-20 20:03:37.501 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cloud_security_posture
+2026-09-20 20:03:37.503 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nmap_engine
+2026-09-20 20:03:37.505 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nuclei_engine
+2026-09-20 20:03:37.507 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: sqlmap_engine
+2026-09-20 20:03:37.509 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ffuf_engine
+2026-09-20 20:03:37.511 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: subfinder_engine
+2026-09-20 20:03:37.513 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dalfox_engine
+2026-09-20 20:03:37.516 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_model_security
+2026-09-20 20:03:37.518 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_engine
+2026-09-20 20:03:37.521 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_engine
+2026-09-20 20:03:37.524 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_model_security_v2
+2026-09-20 20:03:37.526 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_v2
+2026-09-20 20:03:37.529 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_v2
+2026-09-20 20:03:37.531 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_assessment_v2
+2026-09-20 20:03:37.534 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: email_security_v2
+2026-09-20 20:03:37.536 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: k8s_security_v2
+2026-09-20 20:03:37.539 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cloud_security_v2
+2026-09-20 20:03:37.541 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: zero_trust_v2
+2026-09-20 20:03:37.543 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_gateway_v2
+2026-09-20 20:03:37.545 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: database_audit_v2
+2026-09-20 20:03:37.547 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_intel_v2
+2026-09-20 20:03:37.549 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_hunting_v2
+2026-09-20 20:03:37.551 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: soc_v2
+2026-09-20 20:03:37.554 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_v2
+2026-09-20 20:03:37.556 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pipeline_v2
+2026-09-20 20:03:37.558 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_polish_v2
+2026-09-20 20:03:37.560 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: post_exploit_v2
+2026-09-20 20:03:37.562 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: metrics_v2
+2026-09-20 20:03:37.565 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_v3
+2026-09-20 20:03:37.567 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_v3
+2026-09-20 20:03:37.569 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nikto_engine
+2026-09-20 20:03:37.571 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cms_scanner
+2026-09-20 20:03:37.573 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: intranet_scanner
+2026-09-20 20:03:37.575 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: password_auditor
+2026-09-20 20:03:37.578 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: recon_engine
+2026-09-20 20:03:37.580 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verifier
+2026-09-20 20:03:37.582 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_reporter
+2026-09-20 20:03:37.584 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: log_analyzer
+2026-09-20 20:03:37.587 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_detector
+2026-09-20 20:03:37.589 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: db_scanner
+2026-09-20 20:03:37.591 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ssl_auditor
+2026-09-20 20:03:37.593 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: shodan_engine
+2026-09-20 20:03:37.597 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: virustotal_engine
+2026-09-20 20:03:37.599 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_pentest
+2026-09-20 20:03:37.601 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: enterprise_pentest
+2026-09-20 20:03:37.603 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_reverse
+2026-09-20 20:03:37.605 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: contract_auditor
+2026-09-20 20:03:37.607 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ir_engine
+2026-09-20 20:03:37.609 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pro_report
+2026-09-20 20:03:37.611 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cve_intel
+2026-09-20 20:03:37.613 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: asm_engine
+2026-09-20 20:03:37.615 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dashboard
+2026-09-20 20:03:37.617 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: crm
+2026-09-20 20:03:37.619 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pro_report_generator
+2026-09-20 20:03:37.621 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: license_manager
+2026-09-20 20:03:37.623 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_assistant
+2026-09-20 20:03:37.626 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: post_exploitation
+2026-09-20 20:03:37.627 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: credential_harvester
+2026-09-20 20:03:37.629 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_engine
+2026-09-20 20:03:37.631 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blue_team_engine
+2026-09-20 20:03:37.633 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_awareness
+2026-09-20 20:03:37.634 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: metasploit_engine
+2026-09-20 20:03:37.636 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lateral_movement_enhanced
+2026-09-20 20:03:37.638 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_chain_builder
+2026-09-20 20:03:37.641 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verifier_pro
+2026-09-20 20:03:37.643 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: deep_report_engine
+2026-09-20 20:03:37.645 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_workflow_engine
+2026-09-20 20:03:37.648 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_path_analyzer
+2026-09-20 20:03:37.650 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: fix_advisor_engine
+2026-09-20 20:03:37.652 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: result_aggregator
+2026-09-20 20:03:37.654 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_prioritizer
+2026-09-20 20:03:37.656 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_lab_manager
+2026-09-20 20:03:37.660 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pentest_workflow_engine
+2026-09-20 20:03:37.663 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: data_visualization_engine
+2026-09-20 20:03:37.665 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_audit_pro
+2026-09-20 20:03:37.726 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: internal_scanner
+2026-09-20 20:03:37.729 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: internal_vuln_checker
+2026-09-20 20:03:37.731 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: socks5_proxy
+2026-09-20 20:03:37.733 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: domain_enumerator
+2026-09-20 20:03:37.735 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lateral_movement_helper
+2026-09-20 20:03:37.756 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_chain_analyzer
+2026-09-20 20:03:37.758 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_vuln_verifier
+2026-09-20 20:03:37.761 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_task_planner
+2026-09-20 20:03:37.782 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ssl_audit_engine
+2026-09-20 20:03:37.784 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cms_scanner
+2026-09-20 20:03:37.787 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_detector_pro
+2026-09-20 20:03:37.789 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_pentest_pro
+2026-09-20 20:03:37.816 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: hydra_engine
+2026-09-20 20:03:37.818 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: internal_vuln_scanner
+2026-09-20 20:03:37.821 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_engine_v4
+2026-09-20 20:03:37.823 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_engine_v4
+2026-09-20 20:03:37.850 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lab_manager
+2026-09-20 20:03:37.852 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: knowledge_base_engine
+2026-09-20 20:03:37.855 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: sop_engine
+2026-09-20 20:03:37.857 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_orchestrator
+2026-09-20 20:03:37.876 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: project_manager
+2026-09-20 20:03:37.878 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: batch_scanner
+2026-09-20 20:03:37.880 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: scan_comparator
+2026-09-20 20:03:37.882 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_vuln_analyzer
+2026-09-20 20:03:37.884 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: false_positive_filter
+2026-09-20 20:03:37.886 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_prioritizer
+2026-09-20 20:03:37.888 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_intel
+2026-09-20 20:03:37.890 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pro_report_v2
+2026-09-20 20:03:37.892 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: self_vuln_verifier
+⚠️  未找到Nmap工具，跳过
+
+======================================================================
+  测试2: Web漏洞扫描
+======================================================================
+目标: http://testphp.vulnweb.com
+时间: 2026-09-20 20:03:37
+
+2026-09-20 20:03:37.896 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: port_scanner
+2026-09-20 20:03:37.898 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dir_bruter
+2026-09-20 20:03:37.900 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: subdomain_enum
+2026-09-20 20:03:37.902 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: tech_detector
+2026-09-20 20:03:37.905 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: whois_dns
+2026-09-20 20:03:37.907 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: web_spider
+2026-09-20 20:03:37.910 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: batch_scanner
+2026-09-20 20:03:37.913 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_detector
+2026-09-20 20:03:37.915 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: web_scanner
+2026-09-20 20:03:37.918 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cve_checker
+2026-09-20 20:03:37.921 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: weak_password
+2026-09-20 20:03:37.924 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: poc_framework
+2026-09-20 20:03:37.927 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: payload_generator
+2026-09-20 20:03:37.929 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_helper
+2026-09-20 20:03:37.931 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: encoder
+2026-09-20 20:03:37.933 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: hash_identifier
+2026-09-20 20:03:37.935 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_generator
+2026-09-20 20:03:37.937 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_exporter
+2026-09-20 20:03:37.942 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_template
+2026-09-20 20:03:37.960 | INFO     | pentestai.modules.utility.scan_history:_init_db:89 - 扫描历史数据库初始化完成: E:\BaiduNetdisk
+Download\yuanbao\PentestAI\pentestai\data\scan_history.db
+2026-09-20 20:03:37.960 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: scan_history
+2026-09-20 20:03:37.965 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dictionary_manager
+2026-09-20 20:03:37.969 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: proxy_pool
+2026-09-20 20:03:37.971 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_server
+2026-09-20 20:03:37.986 | INFO     | pentestai.modules.utility.vuln_kb:_init_db:279 - 漏洞知识库初始化完成: 15个内置漏洞
+2026-09-20 20:03:37.987 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_kb
+2026-09-20 20:03:37.989 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: phishing_detector
+2026-09-20 20:03:37.991 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: incident_response
+2026-09-20 20:03:37.994 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cloud_security
+2026-09-20 20:03:37.996 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: container_security
+2026-09-20 20:03:37.998 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: iot_security
+2026-09-20 20:03:38.000 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: password_security
+2026-09-20 20:03:38.002 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_security
+2026-09-20 20:03:38.004 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_api_security
+2026-09-20 20:03:38.006 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: code_audit
+2026-09-20 20:03:38.008 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: social_engineering_defense
+2026-09-20 20:03:38.010 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: wifi_security
+2026-09-20 20:03:38.013 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: bluetooth_security
+2026-09-20 20:03:38.015 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nfc_security
+2026-09-20 20:03:38.017 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: physical_security
+2026-09-20 20:03:38.019 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: database_security
+2026-09-20 20:03:38.020 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: middleware_security
+2026-09-20 20:03:38.022 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cdn_security
+2026-09-20 20:03:38.024 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dns_security
+2026-09-20 20:03:38.025 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_assistant
+2026-09-20 20:03:38.028 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_generator_pro
+2026-09-20 20:03:38.030 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_security_analyzer
+2026-09-20 20:03:38.032 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: batch_scan_manager
+2026-09-20 20:03:38.034 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_kb_pro
+2026-09-20 20:03:38.036 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dictionary_manager_pro
+2026-09-20 20:03:38.039 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: proxy_pool_pro
+2026-09-20 20:03:38.041 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_server_pro
+2026-09-20 20:03:38.043 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: gui_enhancer
+2026-09-20 20:03:38.046 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: plugin_system
+2026-09-20 20:03:38.048 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: i18n_manager
+2026-09-20 20:03:38.050 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: data_visualizer
+2026-09-20 20:03:38.052 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: workflow_engine
+2026-09-20 20:03:38.058 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: task_manager
+2026-09-20 20:03:38.060 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_knowledge_base
+2026-09-20 20:03:38.064 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: performance_manager
+2026-09-20 20:03:38.066 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_framework_enhanced
+2026-09-20 20:03:38.068 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: post_exploitation_assistant
+2026-09-20 20:03:38.071 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_simulator
+2026-09-20 20:03:38.073 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blue_team_defense_checker
+2026-09-20 20:03:38.075 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_intel_monitor
+2026-09-20 20:03:38.077 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_hunting_helper
+2026-09-20 20:03:38.079 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_audit
+2026-09-20 20:03:38.081 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_automation
+2026-09-20 20:03:38.083 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_environment_manager
+2026-09-20 20:03:38.085 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_surface_manager
+2026-09-20 20:03:38.086 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_training_helper
+2026-09-20 20:03:38.088 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: multi_engine_scan_scheduler
+2026-09-20 20:03:38.091 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verification_automation
+2026-09-20 20:03:38.092 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: asset_vuln_correlation
+2026-09-20 20:03:38.094 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: soc_assistant
+2026-09-20 20:03:38.096 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lightweight_agent
+2026-09-20 20:03:38.098 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_chain_builder
+2026-09-20 20:03:38.100 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verifier_pro
+2026-09-20 20:03:38.103 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: deep_report_engine
+2026-09-20 20:03:38.105 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_workflow_engine
+2026-09-20 20:03:38.107 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_path_analyzer
+2026-09-20 20:03:38.109 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: fix_advisor_engine
+2026-09-20 20:03:38.111 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: result_aggregator
+2026-09-20 20:03:38.113 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_prioritizer
+2026-09-20 20:03:38.115 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_lab_manager
+2026-09-20 20:03:38.119 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pentest_workflow_engine
+2026-09-20 20:03:38.121 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: data_visualization_engine
+2026-09-20 20:03:38.123 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_audit_pro
+2026-09-20 20:03:38.125 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_intel_aggregator
+2026-09-20 20:03:38.127 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: soar_orchestrator
+2026-09-20 20:03:38.129 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: distributed_scan_nodes
+2026-09-20 20:03:38.131 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_report_generator
+2026-09-20 20:03:38.133 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_success_predictor
+2026-09-20 20:03:38.136 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_automation
+2026-09-20 20:03:38.138 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_review
+2026-09-20 20:03:38.140 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: automated_pentest_pipeline
+2026-09-20 20:03:38.142 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_intel_auto_correlator
+2026-09-20 20:03:38.144 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_pentest_advisor
+2026-09-20 20:03:38.146 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_metrics_dashboard
+2026-09-20 20:03:38.148 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_gateway_security
+2026-09-20 20:03:38.150 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: supply_chain_audit
+2026-09-20 20:03:38.152 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_app_security_enhanced
+2026-09-20 20:03:38.154 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: automated_threat_hunting
+2026-09-20 20:03:38.156 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: k8s_security_auditor
+2026-09-20 20:03:38.158 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: zero_trust_assessor
+2026-09-20 20:03:38.160 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_report_polisher
+2026-09-20 20:03:38.162 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_awareness_training
+2026-09-20 20:03:38.164 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: email_security_tester
+2026-09-20 20:03:38.166 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_assessment
+2026-09-20 20:03:38.168 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: database_audit_enhanced
+2026-09-20 20:03:38.171 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cloud_security_posture
+2026-09-20 20:03:38.173 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nmap_engine
+2026-09-20 20:03:38.175 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nuclei_engine
+2026-09-20 20:03:38.177 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: sqlmap_engine
+2026-09-20 20:03:38.180 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ffuf_engine
+2026-09-20 20:03:38.182 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: subfinder_engine
+2026-09-20 20:03:38.184 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dalfox_engine
+2026-09-20 20:03:38.186 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_model_security
+2026-09-20 20:03:38.188 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_engine
+2026-09-20 20:03:38.190 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_engine
+2026-09-20 20:03:38.192 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_model_security_v2
+2026-09-20 20:03:38.194 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_v2
+2026-09-20 20:03:38.196 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_v2
+2026-09-20 20:03:38.198 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_assessment_v2
+2026-09-20 20:03:38.200 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: email_security_v2
+2026-09-20 20:03:38.202 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: k8s_security_v2
+2026-09-20 20:03:38.204 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cloud_security_v2
+2026-09-20 20:03:38.206 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: zero_trust_v2
+2026-09-20 20:03:38.208 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_gateway_v2
+2026-09-20 20:03:38.210 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: database_audit_v2
+2026-09-20 20:03:38.212 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_intel_v2
+2026-09-20 20:03:38.214 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_hunting_v2
+2026-09-20 20:03:38.216 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: soc_v2
+2026-09-20 20:03:38.218 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_v2
+2026-09-20 20:03:38.220 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pipeline_v2
+2026-09-20 20:03:38.222 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_polish_v2
+2026-09-20 20:03:38.224 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: post_exploit_v2
+2026-09-20 20:03:38.226 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: metrics_v2
+2026-09-20 20:03:38.228 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_v3
+2026-09-20 20:03:38.230 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_v3
+2026-09-20 20:03:38.232 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nikto_engine
+2026-09-20 20:03:38.234 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cms_scanner
+2026-09-20 20:03:38.236 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: intranet_scanner
+2026-09-20 20:03:38.238 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: password_auditor
+2026-09-20 20:03:38.240 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: recon_engine
+2026-09-20 20:03:38.242 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verifier
+2026-09-20 20:03:38.244 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_reporter
+2026-09-20 20:03:38.246 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: log_analyzer
+2026-09-20 20:03:38.248 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_detector
+2026-09-20 20:03:38.250 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: db_scanner
+2026-09-20 20:03:38.252 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ssl_auditor
+2026-09-20 20:03:38.254 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: shodan_engine
+2026-09-20 20:03:38.256 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: virustotal_engine
+2026-09-20 20:03:38.258 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_pentest
+2026-09-20 20:03:38.260 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: enterprise_pentest
+2026-09-20 20:03:38.262 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_reverse
+2026-09-20 20:03:38.264 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: contract_auditor
+2026-09-20 20:03:38.266 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ir_engine
+2026-09-20 20:03:38.268 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pro_report
+2026-09-20 20:03:38.270 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cve_intel
+2026-09-20 20:03:38.272 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: asm_engine
+2026-09-20 20:03:38.274 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dashboard
+2026-09-20 20:03:38.276 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: crm
+2026-09-20 20:03:38.278 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pro_report_generator
+2026-09-20 20:03:38.280 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: license_manager
+2026-09-20 20:03:38.282 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_assistant
+2026-09-20 20:03:38.284 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: post_exploitation
+2026-09-20 20:03:38.286 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: credential_harvester
+2026-09-20 20:03:38.289 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_engine
+2026-09-20 20:03:38.291 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blue_team_engine
+2026-09-20 20:03:38.293 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_awareness
+2026-09-20 20:03:38.295 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: metasploit_engine
+2026-09-20 20:03:38.297 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lateral_movement_enhanced
+2026-09-20 20:03:38.299 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_chain_builder
+2026-09-20 20:03:38.301 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verifier_pro
+2026-09-20 20:03:38.303 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: deep_report_engine
+2026-09-20 20:03:38.305 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_workflow_engine
+2026-09-20 20:03:38.307 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_path_analyzer
+2026-09-20 20:03:38.309 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: fix_advisor_engine
+2026-09-20 20:03:38.311 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: result_aggregator
+2026-09-20 20:03:38.313 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_prioritizer
+2026-09-20 20:03:38.315 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_lab_manager
+2026-09-20 20:03:38.318 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pentest_workflow_engine
+2026-09-20 20:03:38.320 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: data_visualization_engine
+2026-09-20 20:03:38.322 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_audit_pro
+2026-09-20 20:03:38.324 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: internal_scanner
+2026-09-20 20:03:38.326 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: internal_vuln_checker
+2026-09-20 20:03:38.330 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: socks5_proxy
+2026-09-20 20:03:38.333 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: domain_enumerator
+2026-09-20 20:03:38.335 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lateral_movement_helper
+2026-09-20 20:03:38.338 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_chain_analyzer
+2026-09-20 20:03:38.340 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_vuln_verifier
+2026-09-20 20:03:38.343 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_task_planner
+2026-09-20 20:03:38.346 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ssl_audit_engine
+2026-09-20 20:03:38.348 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cms_scanner
+2026-09-20 20:03:38.350 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_detector_pro
+2026-09-20 20:03:38.353 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_pentest_pro
+2026-09-20 20:03:38.355 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: hydra_engine
+2026-09-20 20:03:38.357 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: internal_vuln_scanner
+2026-09-20 20:03:38.358 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_engine_v4
+2026-09-20 20:03:38.360 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_engine_v4
+2026-09-20 20:03:38.362 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lab_manager
+2026-09-20 20:03:38.364 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: knowledge_base_engine
+2026-09-20 20:03:38.367 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: sop_engine
+2026-09-20 20:03:38.369 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_orchestrator
+2026-09-20 20:03:38.371 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: project_manager
+2026-09-20 20:03:38.373 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: batch_scanner
+2026-09-20 20:03:38.375 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: scan_comparator
+2026-09-20 20:03:38.377 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_vuln_analyzer
+2026-09-20 20:03:38.380 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: false_positive_filter
+2026-09-20 20:03:38.382 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_prioritizer
+2026-09-20 20:03:38.384 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_intel
+2026-09-20 20:03:38.386 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pro_report_v2
+2026-09-20 20:03:38.388 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: self_vuln_verifier
+⚠️  未找到Web扫描工具，尝试用HTTP工具测试连通性
+
+======================================================================
+  备选测试: HTTP连通性测试
+======================================================================
+❌ HTTP连接失败: <urlopen error timed out>
+
+======================================================================
+  测试3: 子域名枚举
+======================================================================
+目标: testphp.vulnweb.com
+
+2026-09-20 20:03:53.965 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: port_scanner
+2026-09-20 20:03:53.967 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dir_bruter
+2026-09-20 20:03:53.970 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: subdomain_enum
+2026-09-20 20:03:53.972 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: tech_detector
+2026-09-20 20:03:53.974 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: whois_dns
+2026-09-20 20:03:53.977 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: web_spider
+2026-09-20 20:03:53.979 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: batch_scanner
+2026-09-20 20:03:53.982 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_detector
+2026-09-20 20:03:53.984 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: web_scanner
+2026-09-20 20:03:53.986 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cve_checker
+2026-09-20 20:03:53.988 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: weak_password
+2026-09-20 20:03:53.990 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: poc_framework
+2026-09-20 20:03:53.992 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: payload_generator
+2026-09-20 20:03:53.994 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_helper
+2026-09-20 20:03:53.996 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: encoder
+2026-09-20 20:03:53.998 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: hash_identifier
+2026-09-20 20:03:54.000 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_generator
+2026-09-20 20:03:54.002 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_exporter
+2026-09-20 20:03:54.006 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_template
+2026-09-20 20:03:54.017 | INFO     | pentestai.modules.utility.scan_history:_init_db:89 - 扫描历史数据库初始化完成: E:\BaiduNetdisk
+Download\yuanbao\PentestAI\pentestai\data\scan_history.db
+2026-09-20 20:03:54.017 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: scan_history
+2026-09-20 20:03:54.021 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dictionary_manager
+2026-09-20 20:03:54.025 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: proxy_pool
+2026-09-20 20:03:54.027 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_server
+2026-09-20 20:03:54.038 | INFO     | pentestai.modules.utility.vuln_kb:_init_db:279 - 漏洞知识库初始化完成: 15个内置漏洞
+2026-09-20 20:03:54.039 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_kb
+2026-09-20 20:03:54.041 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: phishing_detector
+2026-09-20 20:03:54.043 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: incident_response
+2026-09-20 20:03:54.045 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cloud_security
+2026-09-20 20:03:54.047 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: container_security
+2026-09-20 20:03:54.049 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: iot_security
+2026-09-20 20:03:54.051 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: password_security
+2026-09-20 20:03:54.053 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_security
+2026-09-20 20:03:54.056 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_api_security
+2026-09-20 20:03:54.058 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: code_audit
+2026-09-20 20:03:54.060 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: social_engineering_defense
+2026-09-20 20:03:54.062 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: wifi_security
+2026-09-20 20:03:54.064 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: bluetooth_security
+2026-09-20 20:03:54.067 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nfc_security
+2026-09-20 20:03:54.069 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: physical_security
+2026-09-20 20:03:54.071 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: database_security
+2026-09-20 20:03:54.073 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: middleware_security
+2026-09-20 20:03:54.075 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cdn_security
+2026-09-20 20:03:54.077 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dns_security
+2026-09-20 20:03:54.079 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_assistant
+2026-09-20 20:03:54.081 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_generator_pro
+2026-09-20 20:03:54.083 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_security_analyzer
+2026-09-20 20:03:54.085 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: batch_scan_manager
+2026-09-20 20:03:54.087 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_kb_pro
+2026-09-20 20:03:54.089 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dictionary_manager_pro
+2026-09-20 20:03:54.091 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: proxy_pool_pro
+2026-09-20 20:03:54.093 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_server_pro
+2026-09-20 20:03:54.096 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: gui_enhancer
+2026-09-20 20:03:54.098 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: plugin_system
+2026-09-20 20:03:54.101 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: i18n_manager
+2026-09-20 20:03:54.103 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: data_visualizer
+2026-09-20 20:03:54.106 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: workflow_engine
+2026-09-20 20:03:54.108 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: task_manager
+2026-09-20 20:03:54.110 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_knowledge_base
+2026-09-20 20:03:54.113 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: performance_manager
+2026-09-20 20:03:54.115 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_framework_enhanced
+2026-09-20 20:03:54.117 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: post_exploitation_assistant
+2026-09-20 20:03:54.119 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_simulator
+2026-09-20 20:03:54.122 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blue_team_defense_checker
+2026-09-20 20:03:54.124 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_intel_monitor
+2026-09-20 20:03:54.126 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_hunting_helper
+2026-09-20 20:03:54.128 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_audit
+2026-09-20 20:03:54.130 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_automation
+2026-09-20 20:03:54.133 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_environment_manager
+2026-09-20 20:03:54.134 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_surface_manager
+2026-09-20 20:03:54.136 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_training_helper
+2026-09-20 20:03:54.139 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: multi_engine_scan_scheduler
+2026-09-20 20:03:54.140 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verification_automation
+2026-09-20 20:03:54.143 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: asset_vuln_correlation
+2026-09-20 20:03:54.145 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: soc_assistant
+2026-09-20 20:03:54.147 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lightweight_agent
+2026-09-20 20:03:54.149 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_chain_builder
+2026-09-20 20:03:54.151 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verifier_pro
+2026-09-20 20:03:54.153 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: deep_report_engine
+2026-09-20 20:03:54.154 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_workflow_engine
+2026-09-20 20:03:54.157 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_path_analyzer
+2026-09-20 20:03:54.159 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: fix_advisor_engine
+2026-09-20 20:03:54.161 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: result_aggregator
+2026-09-20 20:03:54.163 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_prioritizer
+2026-09-20 20:03:54.165 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_lab_manager
+2026-09-20 20:03:54.168 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pentest_workflow_engine
+2026-09-20 20:03:54.170 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: data_visualization_engine
+2026-09-20 20:03:54.172 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_audit_pro
+2026-09-20 20:03:54.174 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_intel_aggregator
+2026-09-20 20:03:54.176 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: soar_orchestrator
+2026-09-20 20:03:54.178 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: distributed_scan_nodes
+2026-09-20 20:03:54.180 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_report_generator
+2026-09-20 20:03:54.182 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_success_predictor
+2026-09-20 20:03:54.184 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_automation
+2026-09-20 20:03:54.186 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_review
+2026-09-20 20:03:54.188 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: automated_pentest_pipeline
+2026-09-20 20:03:54.190 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_intel_auto_correlator
+2026-09-20 20:03:54.192 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_pentest_advisor
+2026-09-20 20:03:54.194 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_metrics_dashboard
+2026-09-20 20:03:54.196 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_gateway_security
+2026-09-20 20:03:54.198 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: supply_chain_audit
+2026-09-20 20:03:54.200 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_app_security_enhanced
+2026-09-20 20:03:54.202 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: automated_threat_hunting
+2026-09-20 20:03:54.204 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: k8s_security_auditor
+2026-09-20 20:03:54.206 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: zero_trust_assessor
+2026-09-20 20:03:54.208 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_report_polisher
+2026-09-20 20:03:54.210 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_awareness_training
+2026-09-20 20:03:54.213 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: email_security_tester
+2026-09-20 20:03:54.214 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_assessment
+2026-09-20 20:03:54.217 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: database_audit_enhanced
+2026-09-20 20:03:54.219 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cloud_security_posture
+2026-09-20 20:03:54.221 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nmap_engine
+2026-09-20 20:03:54.223 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nuclei_engine
+2026-09-20 20:03:54.225 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: sqlmap_engine
+2026-09-20 20:03:54.227 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ffuf_engine
+2026-09-20 20:03:54.229 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: subfinder_engine
+2026-09-20 20:03:54.231 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dalfox_engine
+2026-09-20 20:03:54.233 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_model_security
+2026-09-20 20:03:54.235 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_engine
+2026-09-20 20:03:54.237 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_engine
+2026-09-20 20:03:54.239 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_model_security_v2
+2026-09-20 20:03:54.241 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_v2
+2026-09-20 20:03:54.243 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_v2
+2026-09-20 20:03:54.245 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_assessment_v2
+2026-09-20 20:03:54.247 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: email_security_v2
+2026-09-20 20:03:54.249 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: k8s_security_v2
+2026-09-20 20:03:54.251 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cloud_security_v2
+2026-09-20 20:03:54.253 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: zero_trust_v2
+2026-09-20 20:03:54.255 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: api_gateway_v2
+2026-09-20 20:03:54.257 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: database_audit_v2
+2026-09-20 20:03:54.260 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_intel_v2
+2026-09-20 20:03:54.262 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: threat_hunting_v2
+2026-09-20 20:03:54.264 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: soc_v2
+2026-09-20 20:03:54.266 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_v2
+2026-09-20 20:03:54.268 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pipeline_v2
+2026-09-20 20:03:54.270 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: report_polish_v2
+2026-09-20 20:03:54.272 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: post_exploit_v2
+2026-09-20 20:03:54.274 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: metrics_v2
+2026-09-20 20:03:54.276 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_v3
+2026-09-20 20:03:54.279 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_v3
+2026-09-20 20:03:54.281 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: nikto_engine
+2026-09-20 20:03:54.283 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cms_scanner
+2026-09-20 20:03:54.284 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: intranet_scanner
+2026-09-20 20:03:54.286 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: password_auditor
+2026-09-20 20:03:54.289 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: recon_engine
+2026-09-20 20:03:54.291 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verifier
+2026-09-20 20:03:54.293 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_reporter
+2026-09-20 20:03:54.295 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: log_analyzer
+2026-09-20 20:03:54.297 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_detector
+2026-09-20 20:03:54.298 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: db_scanner
+2026-09-20 20:03:54.301 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ssl_auditor
+2026-09-20 20:03:54.303 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: shodan_engine
+2026-09-20 20:03:54.305 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: virustotal_engine
+2026-09-20 20:03:54.307 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_pentest
+2026-09-20 20:03:54.309 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: enterprise_pentest
+2026-09-20 20:03:54.311 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_reverse
+2026-09-20 20:03:54.313 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: contract_auditor
+2026-09-20 20:03:54.315 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ir_engine
+2026-09-20 20:03:54.316 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pro_report
+2026-09-20 20:03:54.318 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cve_intel
+2026-09-20 20:03:54.320 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: asm_engine
+2026-09-20 20:03:54.322 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: dashboard
+2026-09-20 20:03:54.324 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: crm
+2026-09-20 20:03:54.327 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pro_report_generator
+2026-09-20 20:03:54.329 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: license_manager
+2026-09-20 20:03:54.331 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_assistant
+2026-09-20 20:03:54.333 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: post_exploitation
+2026-09-20 20:03:54.335 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: credential_harvester
+2026-09-20 20:03:54.337 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: red_team_engine
+2026-09-20 20:03:54.339 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blue_team_engine
+2026-09-20 20:03:54.341 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: security_awareness
+2026-09-20 20:03:54.343 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: metasploit_engine
+2026-09-20 20:03:54.345 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lateral_movement_enhanced
+2026-09-20 20:03:54.347 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: exploit_chain_builder
+2026-09-20 20:03:54.349 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_verifier_pro
+2026-09-20 20:03:54.351 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: deep_report_engine
+2026-09-20 20:03:54.353 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_workflow_engine
+2026-09-20 20:03:54.355 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_path_analyzer
+2026-09-20 20:03:54.358 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: fix_advisor_engine
+2026-09-20 20:03:54.360 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: result_aggregator
+2026-09-20 20:03:54.362 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_prioritizer
+2026-09-20 20:03:54.364 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_lab_manager
+2026-09-20 20:03:54.368 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pentest_workflow_engine
+2026-09-20 20:03:54.370 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: data_visualization_engine
+2026-09-20 20:03:54.372 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: compliance_audit_pro
+2026-09-20 20:03:54.374 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: internal_scanner
+2026-09-20 20:03:54.376 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: internal_vuln_checker
+2026-09-20 20:03:54.378 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: socks5_proxy
+2026-09-20 20:03:54.380 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: domain_enumerator
+2026-09-20 20:03:54.382 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lateral_movement_helper
+2026-09-20 20:03:54.384 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: attack_chain_analyzer
+2026-09-20 20:03:54.386 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_vuln_verifier
+2026-09-20 20:03:54.388 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_task_planner
+2026-09-20 20:03:54.390 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ssl_audit_engine
+2026-09-20 20:03:54.392 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: cms_scanner
+2026-09-20 20:03:54.394 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: waf_detector_pro
+2026-09-20 20:03:54.397 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: auto_pentest_pro
+2026-09-20 20:03:54.399 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: hydra_engine
+2026-09-20 20:03:54.400 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: internal_vuln_scanner
+2026-09-20 20:03:54.402 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: mobile_security_engine_v4
+2026-09-20 20:03:54.404 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: blockchain_security_engine_v4
+2026-09-20 20:03:54.406 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: lab_manager
+2026-09-20 20:03:54.408 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: knowledge_base_engine
+2026-09-20 20:03:54.410 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: sop_engine
+2026-09-20 20:03:54.413 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: smart_orchestrator
+2026-09-20 20:03:54.415 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: project_manager
+2026-09-20 20:03:54.416 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: batch_scanner
+2026-09-20 20:03:54.418 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: scan_comparator
+2026-09-20 20:03:54.421 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: ai_vuln_analyzer
+2026-09-20 20:03:54.423 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: false_positive_filter
+2026-09-20 20:03:54.425 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_prioritizer
+2026-09-20 20:03:54.427 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: vuln_intel
+2026-09-20 20:03:54.429 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: pro_report_v2
+2026-09-20 20:03:54.431 | DEBUG    | pentestai.core.base_tool:register:114 - 注册工具: self_vuln_verifier
+⚠️  未找到子域名枚举工具，跳过
+
+======================================================================
+  测试总结
+======================================================================
+通过: 0/2
+  ❌ nmap
+  ❌ web_scan
+  ⚠️  subdomain
+
+======================================================================

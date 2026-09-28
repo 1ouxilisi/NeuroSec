@@ -1,0 +1,48 @@
+﻿python : 19:41:59 | INFO     | pentestai.core.engine_manager:_load_config - 加载引擎配置: 10个
+所在位置 行:1 字符: 59
++ ... load\yuanbao\PentestAI"; python main.py > run_output.txt 2>&1; Start- ...
++                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (19:41:59 | INFO...g - 加载引擎配置: 10个:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+19:41:59 | INFO     | pentestai.core.engine_manager:_detect_all_engines - 检测到引擎: Nmap -> C:\Program Files (x86)\Nmap\nm
+ap.exe
+19:41:59 | INFO     | pentestai.core.engine_manager:_detect_all_engines - 检测到引擎: Nuclei -> C:\Users\ASUS\tools\nuclei.e
+xe
+19:41:59 | INFO     | pentestai.core.engine_manager:_detect_all_engines - 检测到引擎: SQLMap -> C:\Users\ASUS\tools\sqlmap.b
+at
+19:41:59 | INFO     | pentestai.core.engine_manager:_detect_all_engines - 检测到引擎: Nikto -> C:\Users\ASUS\tools\nikto.bat
+19:41:59 | INFO     | pentestai.core.engine_manager:_detect_all_engines - 检测到引擎: Subfinder -> C:\Users\ASUS\bin\subfind
+er.EXE
+19:41:59 | INFO     | pentestai.core.engine_manager:_detect_all_engines - 检测到引擎: JADX -> C:\Users\ASUS\tools\jadx\bin\j
+adx.bat
+19:41:59 | INFO     | pentestai.core.engine_manager:_detect_all_engines - 检测到引擎: Apktool -> C:\Users\ASUS\tools\apktool
+.bat
+19:41:59 | INFO     | pentestai.core.engine_manager:_detect_all_engines - 检测到引擎: Python -> C:\Users\ASUS\AppData\Local\
+Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\python.EXE
+19:41:59 | INFO     | pentestai.core.engine_manager:_detect_all_engines - 检测到引擎: Docker -> C:\Program Files\Docker\Dock
+er\resources\bin\docker.exe
+19:41:59 | INFO     | pentestai.core.engine_manager:_detect_all_engines - 检测到引擎: curl -> C:\Windows\System32\curl.exe
+19:42:02 | INFO     | pentestai.modules.utility.scan_history:_init_db - 扫描历史数据库初始化完成: E:\BaiduNetdiskDownload\yuanbao\P
+entestAI\pentestai\data\scan_history.db
+19:42:02 | INFO     | pentestai.modules.utility.vuln_kb:_init_db - 漏洞知识库初始化完成: 15个内置漏洞
+19:42:02 | INFO     | pentestai.gui.main_window:__init__ - 已注册 195 个工具
+Traceback (most recent call last):
+  File "E:\BaiduNetdiskDownload\yuanbao\PentestAI\main.py", line 13, in <module>
+    main()
+    ~~~~^^
+  File "E:\BaiduNetdiskDownload\yuanbao\PentestAI\pentestai\gui\main_window.py", line 131, in main
+    window = MainWindow()
+  File "E:\BaiduNetdiskDownload\yuanbao\PentestAI\pentestai\gui\main_window.py", line 56, in __init__
+    self.business_page = BusinessPage(self.registry)
+                         ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\BaiduNetdiskDownload\yuanbao\PentestAI\pentestai\gui\business_page.py", line 43, in __init__
+    self._init_ui()
+    ~~~~~~~~~~~~~^^
+  File "E:\BaiduNetdiskDownload\yuanbao\PentestAI\pentestai\gui\business_page.py", line 51, in _init_ui
+    self._init_project_tab()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\BaiduNetdiskDownload\yuanbao\PentestAI\pentestai\gui\business_page.py", line 136, in _init_project_tab
+    vuln_layout = QVBoxLayout(vuln_layout)
+                              ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'vuln_layout' where it is not associated with a value
