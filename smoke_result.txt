@@ -1,0 +1,104 @@
+﻿
+🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+PentestAI 全面冒烟测试
+测试时间: 2026-09-20 19:52:52
+🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+
+============================================================
+测试1: 核心模块导入
+============================================================
+  ✅ pentestai.core.tool_init
+python : 2026-09-20 19:52:53.208 | INFO     | pentestai.core.engine_manager:_load_config:173 - 加载引擎配置: 10个
+所在位置 行:1 字符: 49
++ ... nbao\PentestAI"; python smoke_test.py > smoke_result.txt 2>&1; Get-Co ...
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-09-20 19:5...3 - 加载引擎配置: 10个:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-09-20 19:52:53.209 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Nmap -> C:\Program 
+Files (x86)\Nmap\nmap.exe
+2026-09-20 19:52:53.209 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Nuclei -> C:\Users\
+ASUS\tools\nuclei.exe
+2026-09-20 19:52:53.210 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: SQLMap -> C:\Users\
+ASUS\tools\sqlmap.bat
+2026-09-20 19:52:53.210 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Nikto -> C:\Users\A
+SUS\tools\nikto.bat
+2026-09-20 19:52:53.241 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Subfinder -> C:\Use
+rs\ASUS\bin\subfinder.EXE
+2026-09-20 19:52:53.269 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: JADX -> C:\Users\AS
+US\tools\jadx\bin\jadx.bat
+2026-09-20 19:52:53.270 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Apktool -> C:\Users
+\ASUS\tools\apktool.bat
+2026-09-20 19:52:53.300 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Python -> C:\Users\
+ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\python.EXE
+2026-09-20 19:52:53.300 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: Docker -> C:\Progra
+m Files\Docker\Docker\resources\bin\docker.exe
+2026-09-20 19:52:53.301 | INFO     | pentestai.core.engine_manager:_detect_all_engines:198 - 检测到引擎: curl -> C:\Windows\
+System32\curl.exe
+  ✅ pentestai.core.engine_manager
+  ✅ pentestai.core.license_manager
+  ❌ pentestai.core.tool_registry: No module named 'pentestai.core.tool_registry'
+  ❌ pentestai.core.result: No module named 'pentestai.core.result'
+  ✅ pentestai.utils.logger
+  ✅ pentestai.modules.utility.scan_history
+  ✅ pentestai.modules.utility.vuln_kb
+
+结果: 6/8 通过
+
+============================================================
+测试2: 引擎管理器
+============================================================
+  ❌ 引擎管理器失败: 'EngineManager' object has no attribute 'get_all_engines'
+Traceback (most recent call last):
+  File "E:\BaiduNetdiskDownload\yuanbao\PentestAI\smoke_test.py", line 49, in test_engine_manager
+    engines = em.get_all_engines()
+              ^^^^^^^^^^^^^^^^^^
+AttributeError: 'EngineManager' object has no attribute 'get_all_engines'. Did you mean: 'get_available_engines'?
+
+============================================================
+测试3: 工具注册表（195个工具）
+============================================================
+  ❌ 工具注册表失败: cannot import name 'init_tools' from 'pentestai.core.tool_init' (E:\BaiduNetdiskDownload\yuanbao\PentestAI\pentestai\core\tool_init.py)
+Traceback (most recent call last):
+  File "E:\BaiduNetdiskDownload\yuanbao\PentestAI\smoke_test.py", line 66, in test_tool_registry
+    from pentestai.core.tool_init import init_tools
+ImportError: cannot import name 'init_tools' from 'pentestai.core.tool_init' (E:\BaiduNetdiskDownload\yuanbao\PentestAI
+\pentestai\core\tool_init.py)
+
+============================================================
+测试5: 授权管理器
+============================================================
+  ❌ 授权管理器失败: 'LicenseManager' object has no attribute 'get_status'
+Traceback (most recent call last):
+
+  File "E:\BaiduNetdiskDownload\yuanbao\PentestAI\smoke_test.py", line 136, in test_license_manager
+    status = lm.get_status()
+             ^^^^^^^^^^^^^
+============================================================
+测试6: 数据库初始化
+============================================================
+  ❌ 数据库失败: cannot import name 'ScanHistoryDB' from 'pentestai.modules.utility.scan_history' (E:\BaiduNetdiskDownload\yuanbao\PentestAI\pentestai\modules\utility\scan_history.py)
+AttributeError: 'LicenseManager' object has no attribute 'get_status'
+Traceback (most recent call last):
+  File "E:\BaiduNetdiskDownload\yuanbao\PentestAI\smoke_test.py", line 152, in test_databases
+    from pentestai.modules.utility.scan_history import ScanHistoryDB
+ImportError: cannot import name 'ScanHistoryDB' from 'pentestai.modules.utility.scan_history' (E:\BaiduNetdiskDownload\
+yuanbao\PentestAI\pentestai\modules\utility\scan_history.py)
+
+============================================================
+测试总结
+============================================================
+  总耗时: 1.82秒
+  通过项: 6
+  失败项: 6
+  工具总数: 0
+
+  ⚠️  存在 6 个问题，需要修复
+    - pentestai.core.tool_registry: No module named 'pentestai.core.tool_registry'
+    - pentestai.core.result: No module named 'pentestai.core.result'
+    - engine_manager: 'EngineManager' object has no attribute 'get_all_engines'
+    - tool_registry: cannot import name 'init_tools' from 'pentestai.core.tool_init' (E:\BaiduNetdiskDownload\yuanbao\PentestAI\pentestai\core\tool_init.py)
+    - license: 'LicenseManager' object has no attribute 'get_status'
+    - database: cannot import name 'ScanHistoryDB' from 'pentestai.modules.utility.scan_history' (E:\BaiduNetdiskDownload\yuanbao\PentestAI\pentestai\modules\utility\scan_history.py)
+
+============================================================

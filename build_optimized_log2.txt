@@ -1,0 +1,300 @@
+﻿pyinstaller : 186 INFO: PyInstaller: 6.22.2, contrib hooks: 2026.7
+所在位置 行:1 字符: 645
++ ... Continue }; pyinstaller PentestAI_optimized.spec --distpath dist_opti ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (186 INFO: PyIns...b hooks: 2026.7:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+186 INFO: Python: 3.14.7
+221 INFO: Platform: Windows-11-10.0.26200-SP0
+222 INFO: Python environment: C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10e
+cd8591889f\python
+344 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User '
+ 'Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Scripts\\pyinstaller.exe',
+ 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\Application\\app\\task-mode-resource\\python-packages',
+ 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User '
+ 'Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\python314.zip',
+ 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User '
+ 'Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\DLLs',
+ 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User '
+ 'Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib',
+ 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User '
+ 'Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python',
+ 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User '
+ 'Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages',
+ 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User '
+ 'Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\win32',
+ 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User '
+ 'Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\win32\\lib',
+ 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User '
+ 'Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\pythonwin',
+ 'E:\\BaiduNetdiskDownload\\yuanbao\\PentestAI']
+947 INFO: Appending 'datas' from .spec
+947 INFO: checking Analysis
+947 INFO: Building Analysis because Analysis-00.toc is non existent
+947 INFO: Looking for Python shared library...
+947 INFO: Using Python shared library: C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed
+152c6f10ecd8591889f\python\python314.dll
+947 INFO: Running Analysis Analysis-00.toc
+947 INFO: Target bytecode optimization level: 2
+947 INFO: Initializing module dependency graph...
+949 INFO: Initializing module graph hook caches...
+965 INFO: Analyzing modules for base_library.zip ...
+2329 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data
+\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+3271 INFO: Processing standard module hook 'hook-math.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\san
+dbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+4616 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\
+sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+4627 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\sa
+ndbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+4700 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\s
+andbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+5240 INFO: Caching module dependency graph...
+5358 INFO: Analyzing E:\BaiduNetdiskDownload\yuanbao\PentestAI\main.py
+5370 INFO: Processing standard module hook 'hook-PySide6.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\
+sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+5573 INFO: Processing standard module hook 'hook-shiboken6.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data
+\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+5806 INFO: Processing standard module hook 'hook-PySide6.QtNetwork.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\U
+ser Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+7900 INFO: Processing standard module hook 'hook-PySide6.QtCore.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User
+ Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+11218 INFO: Processing standard module hook 'hook-PySide6.QtWidgets.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\
+User Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+14399 INFO: Processing standard module hook 'hook-PySide6.QtGui.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User
+ Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+40315 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Douba
+o\\User Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+40606 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Dat
+a\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+40610 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\
+\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+41225 INFO: Processing standard module hook 'hook-urllib3.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\
+\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdh
+ooks'
+41318 INFO: Processing pre-safe-import-module hook 'hook-backports.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\U
+ser Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks\\pre
+_safe_import_module'
+41320 INFO: SetuptoolsInfo: initializing cached setuptools info...
+42061 INFO: Setuptools: 'backports' appears to be a full setuptools-vendored copy - creating alias to 'setuptools._vend
+or.backports'!
+42073 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\ASUS\\AppData\\Local\\D
+oubao\\User Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\ho
+oks\\pre_safe_import_module'
+42848 INFO: Processing standard module hook 'hook-certifi.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\
+\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdh
+ooks'
+42899 INFO: Processing standard module hook 'hook-charset_normalizer.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\
+\User Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_co
+ntrib\\stdhooks'
+43129 INFO: Processing standard module hook 'hook-cryptography.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User 
+Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\
+\stdhooks'
+44442 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+44778 INFO: Processing standard module hook 'hook-bcrypt.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\
+sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdho
+oks'
+45046 INFO: Processing standard module hook 'hook-anyio.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\s
+andbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhoo
+ks'
+46235 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data
+\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+46668 INFO: Processing standard module hook 'hook-webbrowser.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Da
+ta\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+46696 INFO: Processing standard module hook 'hook-pygments.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data
+\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+48199 INFO: Processing standard module hook 'hook-rich.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\sa
+ndbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhook
+s'
+49932 INFO: Processing standard module hook 'hook-dns.rdata.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Dat
+a\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\st
+dhooks'
+51082 INFO: Processing standard module hook 'hook-pythoncom.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Dat
+a\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\st
+dhooks'
+51197 INFO: Processing standard module hook 'hook-pywintypes.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Da
+ta\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\s
+tdhooks'
+51622 INFO: Processing standard module hook 'hook-reportlab.lib.utils.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao
+\\User Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_c
+ontrib\\stdhooks'
+51661 INFO: Processing standard module hook 'hook-PIL.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\san
+dbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+51759 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Dat
+a\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+52160 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\san
+dbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+52179 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Dou
+bao\\User Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hook
+s'
+52352 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\Us
+er Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+52608 INFO: Processing standard module hook 'hook-reportlab.pdfbase._fontdata.py' from 'C:\\Users\\ASUS\\AppData\\Local
+\\Doubao\\User Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller
+_hooks_contrib\\stdhooks'
+53832 INFO: Processing standard module hook 'hook-pyphen.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\
+sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdho
+oks'
+54577 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\Use
+r Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+54677 INFO: Processing standard module hook 'hook-docx.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\sa
+ndbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhook
+s'
+54864 INFO: Processing standard module hook 'hook-lxml.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\sa
+ndbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhook
+s'
+55219 INFO: Processing standard module hook 'hook-lxml.etree.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Da
+ta\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\s
+tdhooks'
+55611 INFO: Processing standard module hook 'hook-sqlite3.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\
+\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+E:\BaiduNetdiskDownload\yuanbao\PentestAI\pentestai\modules\internal\post_exploitation_assistant.py:23: SyntaxWarning: 
+"\S" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\S"? A raw string is als
+o an option.
+  "check_method": "检查注册表HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA",
+58655 INFO: Processing standard module hook 'hook-Crypto.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\
+sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdho
+oks'
+59409 INFO: Processing standard module hook 'hook-pycparser.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Dat
+a\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\st
+dhooks'
+59593 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\U
+ser Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks\\pre
+_safe_import_module'
+60422 INFO: Analyzing hidden import 'PySide6.QtSvg'
+60434 INFO: Processing standard module hook 'hook-PySide6.QtSvg.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User
+ Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+61138 INFO: Processing module hooks (post-graph stage)...
+61331 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\U
+ser Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks\\pre
+_safe_import_module'
+62332 INFO: Processing standard module hook 'hook-lxml.isoschematron.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\
+\User Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_co
+ntrib\\stdhooks'
+62367 WARNING: Hidden import "pycparser.lextab" not found!
+62367 WARNING: Hidden import "pycparser.yacctab" not found!
+62864 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doub
+ao\\User Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks
+'
+65471 INFO: Processing standard module hook 'hook-lxml.objectify.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\Use
+r Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contri
+b\\stdhooks'
+65482 INFO: Performing binary vs. data reclassification (293 entries)
+65756 INFO: Looking for ctypes DLLs
+65795 INFO: Analyzing run-time hooks ...
+65801 INFO: Including run-time hook 'pyi_rth_pyside6.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\sand
+box_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+65804 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao
+\\User Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks\\
+pre_find_module_path'
+65808 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\Use
+r Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks'
+65812 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\sand
+box_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+65815 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Da
+ta\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+65818 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\Us
+er Data\\sandbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contr
+ib\\rthooks'
+65819 INFO: Including run-time hook 'pyi_rth_pythoncom.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\sa
+ndbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\rthooks
+'
+65821 INFO: Including run-time hook 'pyi_rth_pywintypes.py' from 'C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\s
+andbox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\rthook
+s'
+65835 INFO: Creating base_library.zip...
+66046 INFO: Looking for dynamic libraries
+67782 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\sandb
+ox_runtime\\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\shiboken6']
+67783 INFO: Extra DLL search directories (PATH): ['C:\\Users\\ASUS\\AppData\\Local\\Doubao\\User Data\\sandbox_runtime\
+\bases\\c98c5042338ed152c6f10ecd8591889f\\python\\Lib\\site-packages\\PySide6']
+70285 INFO: Warnings written to E:\BaiduNetdiskDownload\yuanbao\PentestAI\build_optimized\PentestAI_optimized\warn-Pent
+estAI_optimized.txt
+70479 INFO: Graph cross-reference written to E:\BaiduNetdiskDownload\yuanbao\PentestAI\build_optimized\PentestAI_optimi
+zed\xref-PentestAI_optimized.html
+70639 INFO: checking PYZ
+70639 INFO: Building PYZ because PYZ-00.toc is non existent
+70639 INFO: Building PYZ (ZlibArchive) E:\BaiduNetdiskDownload\yuanbao\PentestAI\build_optimized\PentestAI_optimized\PY
+Z-00.pyz
+E:\BaiduNetdiskDownload\yuanbao\PentestAI\pentestai\modules\internal\post_exploitation_assistant.py:23: SyntaxWarning: 
+"\S" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\S"? A raw string is als
+o an option.
+  "check_method": "检查注册表HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA",
+75163 INFO: Building PYZ (ZlibArchive) E:\BaiduNetdiskDownload\yuanbao\PentestAI\build_optimized\PentestAI_optimized\PY
+Z-00.pyz completed successfully.
+75204 INFO: checking PKG
+75204 INFO: Building PKG because PKG-00.toc is non existent
+75204 INFO: Building PKG (CArchive) PentestAI.pkg
+75298 INFO: Building PKG (CArchive) PentestAI.pkg completed successfully.
+75302 INFO: Bootloader C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd85918
+89f\python\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+75302 INFO: checking EXE
+75302 INFO: Building EXE because EXE-00.toc is non existent
+75302 INFO: Building EXE from EXE-00.toc
+75302 INFO: Copying bootloader EXE to E:\BaiduNetdiskDownload\yuanbao\PentestAI\build_optimized\PentestAI_optimized\Pen
+testAI.exe
+75660 INFO: Copying icon to EXE
+75753 INFO: Copying 0 resources to EXE
+75753 INFO: Embedding manifest in EXE
+75854 INFO: Appending PKG archive to EXE
+76086 INFO: Fixing EXE headers
+76626 INFO: Building EXE from EXE-00.toc completed successfully.
+76631 INFO: checking COLLECT
+76631 INFO: Building COLLECT because COLLECT-00.toc is non existent
+76632 INFO: Building COLLECT COLLECT-00.toc
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\Scri
+pts\pyinstaller.exe\__main__.py", line 5, in <module>
+    sys.exit(_console_script_run())
+             ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\Lib\
+site-packages\PyInstaller\__main__.py", line 231, in _console_script_run
+    run()
+    ~~~^^
+  File "C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\Lib\
+site-packages\PyInstaller\__main__.py", line 215, in run
+    run_build(pyi_config, spec_file, **vars(args))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\Lib\
+site-packages\PyInstaller\__main__.py", line 70, in run_build
+    PyInstaller.building.build_main.main(pyi_config, spec_file, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\Lib\
+site-packages\PyInstaller\building\build_main.py", line 1275, in main
+    build(specfile, distpath, workpath, clean_build)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\Lib\
+site-packages\PyInstaller\building\build_main.py", line 1213, in build
+    exec(code, spec_namespace)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "PentestAI_optimized.spec", line 113, in <module>
+    coll = COLLECT(
+        exe,
+    ...<5 lines>...
+        name='PentestAI',
+    )
+  File "C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\Lib\
+site-packages\PyInstaller\building\api.py", line 1150, in __init__
+    self.__postinit__()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\Lib\
+site-packages\PyInstaller\building\datastruct.py", line 184, in __postinit__
+    self.assemble()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\Lib\
+site-packages\PyInstaller\building\api.py", line 1196, in assemble
+    src_name = process_collected_binary(
+        src_name,
+    ...<7 lines>...
+        strict_arch_validation=(typecode == 'EXTENSION'),
+    )
+  File "C:\Users\ASUS\AppData\Local\Doubao\User Data\sandbox_runtime\bases\c98c5042338ed152c6f10ecd8591889f\python\Lib\
+site-packages\PyInstaller\building\utils.py", line 198, in process_collected_binary
+    os.makedirs(cache_dir, exist_ok=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 236, in makedirs
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\ASUS\\AppData\\Local\\pyinstaller\\bincache10py31464bit'
